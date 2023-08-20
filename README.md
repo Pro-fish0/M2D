@@ -3,15 +3,13 @@ M2D is a 2D physics engine designed to simulate physical interactions in a two-d
 
 ## Features
 - **Particle Systems**: Basic system for simulating particles with forces and motion.
-- **Collision Detection**: Basic collision detection between particles.
+- **Collision Detection**: Basic collision detection between particles based on their radii.
 - **Forces and Motion**: Simulate real-world physics like gravity.
-- **Constraints**: Basic constraints between particles.
-- **Creature Simulation**: Basic simulation of creature behavior.
+- **Constraints**: Basic implementation of constraints like springs between particles.
+- **Creature Simulation**: Basic creature model with movement and eating behavior.
 - **Food Spawns**: (To be implemented)
-- **Graphical User Interface (GUI)**: Basic GUI for visualizing the simulation.
-- **Agent Creature**: Basic implementation of agent creature behavior and simulation.
-- **Math Utilities**: Basic mathematical utilities like dot product, vector magnitude, and normalization.
-- **Core Physics**: Basic particle system with mass, position, and velocity.
+- **Graphical User Interface (GUI)**: (To be implemented)
+- **Agent Creature**: (To be implemented)
 
 ## Installation
 1. Clone the repository

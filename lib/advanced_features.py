@@ -1,36 +1,22 @@
 
-from math_utils import Vector2D
-
 class Constraint:
-    def __init__(self, particle1, particle2, stiffness):
+    def __init__(self, particle1, particle2, rest_distance):
         self.particle1 = particle1
         self.particle2 = particle2
-        self.stiffness = stiffness
+        self.rest_distance = rest_distance
 
-    def apply(self):
-        # Calculate the vector between the two particles
-        delta = self.particle2.position - self.particle1.position
+    def enforce(self):
+        # Calculate the current distance between particles
+        dx = self.particle1.position[0] - self.particle2.position[0]
+        dy = self.particle1.position[1] - self.particle2.position[1]
+        current_distance = (dx ** 2 + dy ** 2) ** 0.5
 
-        # Find the current distance
-        distance = delta.magnitude()
-        
-        # Find the difference from the rest distance
-        difference = distance - self.rest_distance
+        # Calculate the corrective force
+        difference = self.rest_distance - current_distance
+        force = [dx / current_distance * difference, dy / current_distance * difference]
 
-        # Calculate the force magnitude
-        force_magnitude = self.stiffness * difference
+        # Apply the corrective force
+        self.particle1.apply_force(force)
+        self.particle2.apply_force([-x for x in force])
 
-        # Calculate the force vector
-        force = delta.normalized() * force_magnitude
-
-        # Apply the force to each particle
-        self.particle1.apply_force(-force)
-        self.particle2.apply_force(force)
-
-# Example usage
-if __name__ == "__main__":
-    p1 = Particle([0, 0], [0, 0])
-    p2 = Particle([1, 0], [0, 0])
-    
-    constraint = Constraint(p1, p2, 1)
-    constraint.apply()
+# Add more advanced features like joints, springs, etc., here...
