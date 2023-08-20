@@ -1,27 +1,24 @@
 
-from lib.core_physics import Particle
-from lib.math_utils import Vector2D
+from lib.core_physics import Particle, apply_gravity
+from lib.math_utils import Vector
 
-def main():
-    # Initialize a particle at position (0, 0) with velocity (1, 0)
-    p = Particle([0, 0], [1, 0])
-    
-    # Define gravity force vector
-    gravity = Vector2D(0, -9.81)
-    
-    # Time step in seconds
-    dt = 0.1  
-    
-    # Simulate the particle's motion for 100 time steps
-    for i in range(100):
-        # Apply gravitational force to the particle
-        p.apply_force(gravity * p.mass)
-        
-        # Update particle's state
-        p.update(dt)
-        
-        # Print particle's state
-        print(f"Time: {i * dt}s, Position: {p.position.x}, {p.position.y}")
+# Initialize particles
+particle1 = Particle(Vector(0, 0), 1, Vector(1, 0))
+particle2 = Particle(Vector(5, 0), 1, Vector(-1, 0))
 
-if __name__ == "__main__":
-    main()
+# Time step for the simulation
+dt = 0.1
+
+# Main simulation loop
+for step in range(100):
+    # Apply forces (e.g., gravity)
+    apply_gravity([particle1, particle2], dt)
+    
+    # Update particles
+    particle1.update(dt)
+    particle2.update(dt)
+    
+    # Print current state
+    print(f"Step {step+1}:")
+    print(f"  Particle 1: Position = {particle1.position}, Velocity = {particle1.velocity}")
+    print(f"  Particle 2: Position = {particle2.position}, Velocity = {particle2.velocity}")

@@ -7,27 +7,22 @@ This document describes the file and folder structure for the M2D project, a 2D 
 ## Root Directory
 - **README.MD**: Contains overall documentation and usage examples.
 - **Project_Structure.MD**: This file, explaining the structure of the project.
-- **main.py**: The entry point for running the physics simulation.
+- **main.py**: The entry point for running the physics simulation. This file integrates all the features into a main simulation loop.
 - **requirements.txt**: Lists the Python package dependencies.
 
 ### Folders
 - **lib/**: Holds the core logic and algorithms for the physics engine.
-- **gui/**: Holds the Tkinter-based GUI for visualizing the simulation.
+- **gui/**: Holds the Tkinter-based GUI for visualizing the simulation. The GUI is handled by `gui_app.py`.
 - **Agent_creature/**: Holds the AI agent creature model with movement, eating, and reproduction logic.
 
-## lib/ Directory
-- **__init__.py**: Makes the folder a Python package.
-- **math_utils.py**: Basic mathematical utilities like dot product, vector magnitude, and normalization.
-- **core_physics.py**: Basic particle system with mass, position, and velocity.
-- **collision_detection.py**: Basic collision detection and resolution between particles based on their radii.
-- **advanced_features.py**: Basic implementation of constraints like springs between particles.
-- **creature_simulation.py**: Basic creature model with movement and eating behavior.
-- **food_spawns.py**: Basic food spawn model with energy values and respawn logic.
-
-## gui/ Directory
-- **__init__.py**: Makes the folder a Python package.
-- **gui_app.py**: Basic Tkinter-based GUI for visualizing the simulation.
-
-## Agent_creature/ Directory
-- **__init__.py**: Makes the folder a Python package.
-- **Simulation.py**: Basic AI agent creature model with movement, eating, and reproduction logic.
+## Main Goals
+1. Basic Particle System: Completed
+2. Basic Forces and Motion: Completed
+3. Basic Collision Detection: Completed
+4. Constraints and Springs: To be implemented
+5. Basic Creature Model: To be implemented
+6. Food Spawn Model: To be implemented
+7. AI Agent Creature: To be implemented
+8. Basic GUI: Completed
+9. Main Simulation Loop: Completed
+10. Advanced Features and Optimizations: To be implemented
