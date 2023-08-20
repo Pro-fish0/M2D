@@ -22,6 +22,7 @@ This document describes the file and folder structure for the M2D project, a 2D 
 - **collision_detection.py**: Basic collision detection and resolution between particles based on their radii.
 - **advanced_features.py**: Basic implementation of constraints like springs between particles.
 - **creature_simulation.py**: Basic creature model with movement and eating behavior.
+- **food_spawns.py**: Basic food spawn model with energy values and respawn logic.
 
 ## gui/ Directory
 - **__init__.py**: Makes the folder a Python package.

@@ -7,7 +7,7 @@ M2D is a 2D physics engine designed to simulate physical interactions in a two-d
 - **Forces and Motion**: Simulate real-world physics like gravity.
 - **Constraints**: Basic implementation of constraints like springs between particles.
 - **Creature Simulation**: Basic creature model with movement and eating behavior.
-- **Food Spawns**: (To be implemented)
+- **Food Spawns**: Basic food spawn model with energy values and respawn logic.
 - **Graphical User Interface (GUI)**: Basic Tkinter GUI for visualizing the simulation.
 - **Agent Creature**: Basic AI agent creature model with movement, eating, and reproduction logic.
 
