@@ -1,18 +1,16 @@
 
 import tkinter as tk
 
-class PhysicsEngineGUI(tk.Tk):
-    def __init__(self):
-        super().__init__()
-        
-        self.title("M2D: 2D Physics Engine")
-        self.geometry("800x600")
-        
-        tk.Label(self, text="Welcome to M2D 2D Physics Engine!").pack()
-        
-        # Add more GUI components here...
+class GUIApp:
+    def __init__(self, master):
+        self.master = master
+        self.canvas = tk.Canvas(self.master, width=800, height=600)
+        self.canvas.pack()
 
-# Example usage
-if __name__ == "__main__":
-    app = PhysicsEngineGUI()
-    app.mainloop()
+    def draw_particle(self, x, y, radius):
+        self.canvas.create_oval(x - radius, y - radius, x + radius, y + radius, fill="blue")
+
+# Create a Tkinter window and attach the GUIApp
+root = tk.Tk()
+app = GUIApp(root)
+root.mainloop()

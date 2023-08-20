@@ -12,8 +12,8 @@ This document describes the file and folder structure for the M2D project, a 2D 
 
 ### Folders
 - **lib/**: Holds the core logic and algorithms for the physics engine.
-- **gui/**: (To be implemented)
-- **Agent_creature/**: (To be implemented)
+- **gui/**: Holds the Tkinter-based GUI for visualizing the simulation.
+- **Agent_creature/**: Holds the AI agent creature model with movement, eating, and reproduction logic.
 
 ## lib/ Directory
 - **__init__.py**: Makes the folder a Python package.
@@ -23,12 +23,10 @@ This document describes the file and folder structure for the M2D project, a 2D 
 - **advanced_features.py**: Basic implementation of constraints like springs between particles.
 - **creature_simulation.py**: Basic creature model with movement and eating behavior.
 
-## Agent_creature/ Directory
-- **__init__.py**: Makes the folder a Python package.
-- **math_utils.py**: (To be implemented)
-- **core_physics.py**: (To be implemented)
-- **Simulation.py**: (To be implemented)
-
 ## gui/ Directory
 - **__init__.py**: Makes the folder a Python package.
-- **gui_app.py**: (To be implemented)
+- **gui_app.py**: Basic Tkinter-based GUI for visualizing the simulation.
+
+## Agent_creature/ Directory
+- **__init__.py**: Makes the folder a Python package.
+- **Simulation.py**: Basic AI agent creature model with movement, eating, and reproduction logic.
