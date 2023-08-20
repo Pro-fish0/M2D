@@ -21,7 +21,7 @@ This document describes the file and folder structure for the M2D project, a 2D 
 - **core_physics.py**: Core physics algorithms, including particle systems and forces.
 - **collision_detection.py**: Basic collision detection and resolution between particles.
 - **advanced_features.py**: Basic constraints between particles.
-- **creature_simulation.py**: (To be implemented)
+- **creature_simulation.py**: Basic simulation of creature behavior.
 
 ## Agent_creature/ Directory
 - **__init__.py**: Makes the folder a Python package.
