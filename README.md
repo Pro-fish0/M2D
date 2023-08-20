@@ -8,8 +8,9 @@ M2D is a 2D physics engine designed to simulate physical interactions in a two-d
 - **Constraints**: Basic constraints between particles.
 - **Creature Simulation**: Basic simulation of creature behavior.
 - **Food Spawns**: (To be implemented)
-- **Graphical User Interface (GUI)**: (To be implemented)
-- **Agent Creature**: (To be implemented)
+- **Graphical User Interface (GUI)**: Basic GUI for visualizing the simulation.
+- **Agent Creature**: Basic implementation of agent creature behavior and simulation.
+- **Math Utilities**: Basic mathematical utilities like dot product, vector magnitude, and normalization.
 
 ## Installation
 1. Clone the repository
