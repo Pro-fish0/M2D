@@ -11,6 +11,7 @@ M2D is a 2D physics engine designed to simulate physical interactions in a two-d
 - **Graphical User Interface (GUI)**: Basic GUI for visualizing the simulation.
 - **Agent Creature**: Basic implementation of agent creature behavior and simulation.
 - **Math Utilities**: Basic mathematical utilities like dot product, vector magnitude, and normalization.
+- **Core Physics**: Basic particle system with mass, position, and velocity.
 
 ## Installation
 1. Clone the repository
